@@ -1,0 +1,40 @@
+.carouselslide {
+    border-radius: 0.2rem;
+    display: flex;
+    width: 90dvw;
+    height: 90dvh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 1.5s linear;
+}
+.carouselslide-prices {
+    font-family: 'poppins';
+    display: flex;
+    gap: 1rem;    
+    justify-content: left;
+    align-items: last baseline;
+}
+.carouselslide-price-new {
+    margin-left: 1rem;
+    color: #fafafa;
+    font-size: 3rem;
+    font-weight: 600;
+    z-index: 2;
+    text-shadow: -1px 0px 10px #000000;
+}
+.carouselslide-price-old {
+    color: #fafafa;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: line-through;
+    z-index: 1;
+    text-shadow: -1px 0px 10px #000000;
+}
+@keyframes smooth {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

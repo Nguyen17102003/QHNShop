@@ -1,0 +1,208 @@
+.cartitem {
+    margin: 3rem 7rem;
+}
+.cartitem hr {
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+}
+.cartitem-format-main {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1.5fr 2fr 2fr;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    color: #454545;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.cartitem-format-main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartitem-format-main p:first-child {
+    max-width: 70%;
+}
+.cartitem-removeicon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartitem-format {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.cartitem-product-icon {
+    padding-left: 0.5rem;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.cartitem-quantity {
+    display: flex;
+}
+.cartitem-quantity button{
+    font-family: 'poppins';
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: larger;
+    border: none;
+}
+.cartitem-quantity input {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 50%;
+    text-align: center;
+}
+.cartitem-quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.cartitem-down {
+    height: 80dvh;
+    width: 100dvw;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    gap: 10rem;
+    margin: 5rem 0;
+}
+.cartitem-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+.cartitem-total-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.cartitem-total button {
+    padding: 1rem 0;
+    outline: none;
+    border: none;
+    background: #ff4141;
+    border-radius: 0.2rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.cartitem-total button:active,  .cartitem-total button:hover{
+    background: #e13a3a;
+}
+.cartitem-promocode {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.cartitem-promocode p {
+    color: #555;
+}
+.cartitem-promobox {
+    border-radius: 0.2rem;
+    display: flex;
+    width: 20rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    height: 3rem;
+    background: #eaeaea;
+}
+.cartitem-promobox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    width: 15rem;
+    height: 3rem;
+}
+.cartitem-promobox button {
+    border-radius: 0.2rem;
+    border: none;
+    width: 7rem;
+    height: 100%;
+    font-size: 1rem;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width: 1100px) {
+    .cartitem-down {
+        width: 90dvw;
+        gap: 5rem;
+        margin-inline: auto
+    }
+}
+@media screen and (max-width: 1000px) {
+    .cartitem-format-main {
+        grid-template-columns: 2fr 3fr 2fr 1.5fr 3fr 3fr 2fr;
+        font-size: 0.8rem; 
+    }
+    .cartitem {
+        margin: 2rem 5rem;
+    }
+    .cartitem-quantity input {
+        font-size: 0.8rem;
+    }
+    .cartitem-quantity button {
+        width: 15px;
+        height: 15px;
+    }
+    .cartitem-down {
+        width: 90dvw;
+        gap: 4rem;
+        margin-inline: auto
+    }
+}
+@media screen and (max-width: 950px) {
+    .cartitem-promobox {
+        width: 19rem;
+    }
+    .cartitem-down {
+        width: 90dvw;
+        gap: 3rem;
+        margin-inline: auto
+    }
+}
+@media screen and (max-width: 900px) {
+    .cartitem-down {
+        width: 80dvw;
+        gap: 3rem;
+        margin-inline: auto
+    }
+}
+@media screen and (max-width: 900px) {
+    .cartitem-down {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 700px) {
+    .cartitem-quantity button {
+        display: none;
+    }
+    .cartitem-format-main {
+        font-size: 0.7rem; 
+    }
+}
+@media screen and (max-width: 600px) {
+    .cartitem {
+        margin: 2rem 3rem;
+    }
+    .cartitem-format-main {
+        grid-template-columns: 2fr 4fr 3fr 2fr 4fr 3fr 2fr;
+    }
+}
